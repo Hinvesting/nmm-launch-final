@@ -40,7 +40,7 @@ export default function LandingPage() {
       {/* Header Logo */}
       <header className="pt-8 pb-4">
         <div className="container mx-auto px-4 text-center">
-          <img src="/images/logo.png" alt="New Money Millionaires L.L.C. Logo" className="h-16 mx-auto" />
+          <img src="/images/logo.png" alt="New Money Millionaires L.L.C. Logo" className="h-24 mx-auto" />
         </div>
       </header>
 
@@ -51,7 +51,8 @@ export default function LandingPage() {
             Stop Staring at a Blank Page. Start Generating Daily Content in 5 Minutes.
           </h1>
           <p className="font-open-sans text-xl md:text-2xl mb-8 text-gray-300 leading-relaxed">
-            Get our free Multi-Content Generator that uses AI to brainstorm, write, and organize a week of social media content for you. 100% Free.
+            Get our free Multi-Content Generator that uses AI to brainstorm, write, and organize a week of social media
+            content for you. 100% Free.
           </p>
           <Button
             onClick={() => setIsModalOpen(true)}
@@ -82,6 +83,7 @@ export default function LandingPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+            {/* Feature 1 */}
             <div className="text-center">
               <div className="w-20 h-20 mx-auto mb-6 bg-[#F1C40F] rounded-full flex items-center justify-center">
                 <Lightbulb className="w-10 h-10 text-black" />
@@ -91,6 +93,7 @@ export default function LandingPage() {
                 Generate unique angles and topics for your niche on demand.
               </p>
             </div>
+            {/* Feature 2 */}
             <div className="text-center">
               <div className="w-20 h-20 mx-auto mb-6 bg-[#F1C40F] rounded-full flex items-center justify-center">
                 <Bot className="w-10 h-10 text-black" />
@@ -100,6 +103,7 @@ export default function LandingPage() {
                 Create engaging social media copy, hashtags, and titles in seconds.
               </p>
             </div>
+            {/* Feature 3 */}
             <div className="text-center">
               <div className="w-20 h-20 mx-auto mb-6 bg-[#F1C40F] rounded-full flex items-center justify-center">
                 <Calendar className="w-10 h-10 text-black" />
@@ -113,8 +117,8 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Creator Section - CORRECTED */}
-      <section className="bg-[#34495E] py-16">
+      {/* Creator Section */}
+      <section className="py-16">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <img
