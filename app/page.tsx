@@ -40,7 +40,7 @@ export default function LandingPage() {
       {/* Header Logo */}
       <header className="pt-8 pb-4">
         <div className="container mx-auto px-4 text-center">
-          <img src="/images/logo.png" alt="New Money Millionaires L.L.C. Logo" className="h-12 mx-auto" />
+          <img src="/images/logo.png" alt="New Money Millionaires L.L.C. Logo" className="h-16 mx-auto" />
         </div>
       </header>
 
@@ -72,7 +72,7 @@ export default function LandingPage() {
               loop
               muted
               playsInline
-              className="rounded-lg shadow-lg mx-auto border-2 border-gray-600"
+              className="rounded-lg shadow-lg mx-auto border-2 border-gray-600 w-full"
             />
           </div>
         </div>
@@ -82,7 +82,6 @@ export default function LandingPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
-            {/* Feature 1 */}
             <div className="text-center">
               <div className="w-20 h-20 mx-auto mb-6 bg-[#F1C40F] rounded-full flex items-center justify-center">
                 <Lightbulb className="w-10 h-10 text-black" />
@@ -92,7 +91,6 @@ export default function LandingPage() {
                 Generate unique angles and topics for your niche on demand.
               </p>
             </div>
-            {/* Feature 2 */}
             <div className="text-center">
               <div className="w-20 h-20 mx-auto mb-6 bg-[#F1C40F] rounded-full flex items-center justify-center">
                 <Bot className="w-10 h-10 text-black" />
@@ -102,7 +100,6 @@ export default function LandingPage() {
                 Create engaging social media copy, hashtags, and titles in seconds.
               </p>
             </div>
-            {/* Feature 3 */}
             <div className="text-center">
               <div className="w-20 h-20 mx-auto mb-6 bg-[#F1C40F] rounded-full flex items-center justify-center">
                 <Calendar className="w-10 h-10 text-black" />
@@ -116,25 +113,15 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Creator Section */}
+      {/* Creator Section - CORRECTED */}
       <section className="bg-[#34495E] py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="text-center">
-                <img
-                  src="/images/sam-stacks-creator.png"
-                  alt="Sam Stacks - Creator"
-                  className="mx-auto rounded-lg shadow-lg max-w-xs h-auto"
-                />
-              </div>
-              <div className="text-center md:text-left">
-                <h3 className="font-montserrat text-3xl font-bold mb-6">From the Desk of Sam Stacks</h3>
-                <p className="font-open-sans text-lg text-gray-200 leading-relaxed">
-                  I built this tool because I know the grind of a solopreneur. Let&apos;s get you back to building your empire, not just writing posts for it.
-                </p>
-              </div>
-            </div>
+        <div className="container mx-auto px-4 text-center">
+          <div className="max-w-2xl mx-auto">
+            <img
+              src="/images/sam-stacks-creator.png"
+              alt="Sam Stacks - Creator of Multi-Content Generator"
+              className="w-full h-auto rounded-xl shadow-lg"
+            />
           </div>
         </div>
       </section>
@@ -142,7 +129,7 @@ export default function LandingPage() {
       {/* Final CTA Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-montserrat text-4xl md:text-5xl font-bold mb-12">Your Audience is Waiting.</h2>
+          <h2 className="font-montserrat text-4xl md:text-5xl font-bold mb-8">Your Audience is Waiting.</h2>
           <Button
             onClick={() => setIsModalOpen(true)}
             className="bg-[#F1C40F] hover:bg-[#D4AC0D] text-black font-montserrat font-bold text-lg px-12 py-6 rounded-lg transition-transform duration-300 transform hover:scale-105 shadow-lg"
